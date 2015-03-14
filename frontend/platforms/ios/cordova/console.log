@@ -46,3 +46,129 @@
 2015-03-14 01:11:58.064 twitterApp[39192:2181867] [CDVTimer][TotalPluginStartup] 0.258029ms
 2015-03-14 01:11:58.310 twitterApp[39192:2181867] Resetting plugins due to page load.
 2015-03-14 01:11:58.725 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:17:49.511 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:17:49.935 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:18:09.039 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:18:09.119 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:18:09.637 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:18:09.720 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:18:17.568 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:18:17.643 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:18:37.821 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:18:37.942 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:18:52.463 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:18:52.529 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:19:04.760 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 02:19:04.913 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:19:21.131 twitterApp[42773:2227883] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/AD7589AC-8751-49FA-9139-1CE7D00E8AA3/Library/Cookies/Cookies.binarycookies
+2015-03-14 02:19:21.586 twitterApp[42773:2227883] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 02:19:21.587 twitterApp[42773:2227883] Multi-tasking -> Device: YES, App: YES
+2015-03-14 02:19:21.606 twitterApp[42773:2227883] Unlimited access to network resources
+2015-03-14 02:19:21.771 twitterApp[42773:2227883] [CDVTimer][keyboard] 0.375986ms
+2015-03-14 02:19:21.771 twitterApp[42773:2227883] [CDVTimer][TotalPluginStartup] 1.659989ms
+2015-03-14 02:19:22.005 twitterApp[42773:2227883] Resetting plugins due to page load.
+2015-03-14 02:19:22.338 twitterApp[42773:2227883] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:19:47.503 twitterApp[42773:2227883] Resetting plugins due to page load.
+2015-03-14 02:19:47.568 twitterApp[42773:2227883] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:20:11.596 twitterApp[42773:2227883] Resetting plugins due to page load.
+2015-03-14 02:20:11.677 twitterApp[42773:2227883] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:20:16.173 twitterApp[42773:2227883] Resetting plugins due to page load.
+2015-03-14 02:20:16.239 twitterApp[42773:2227883] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:22:55.434 twitterApp[42938:2230755] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/D28B09E7-52E2-4C28-94EF-4658EF91A25D/Library/Cookies/Cookies.binarycookies
+2015-03-14 02:22:55.621 twitterApp[42938:2230755] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 02:22:55.622 twitterApp[42938:2230755] Multi-tasking -> Device: YES, App: YES
+2015-03-14 02:22:55.623 twitterApp[42938:2230755] Unlimited access to network resources
+2015-03-14 02:22:55.709 twitterApp[42938:2230755] [CDVTimer][keyboard] 0.062943ms
+2015-03-14 02:22:55.709 twitterApp[42938:2230755] [CDVTimer][TotalPluginStartup] 0.227988ms
+2015-03-14 02:22:55.808 twitterApp[42938:2230755] Resetting plugins due to page load.
+2015-03-14 02:22:56.048 twitterApp[42938:2230755] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:23:21.059 twitterApp[42938:2230755] Resetting plugins due to page load.
+2015-03-14 02:23:21.149 twitterApp[42938:2230755] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:23:42.097 twitterApp[43065:2231674] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/40C67928-CE45-44A8-A334-F2E4589C3C7C/Library/Cookies/Cookies.binarycookies
+2015-03-14 02:23:42.283 twitterApp[43065:2231674] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 02:23:42.284 twitterApp[43065:2231674] Multi-tasking -> Device: YES, App: YES
+2015-03-14 02:23:42.287 twitterApp[43065:2231674] Unlimited access to network resources
+2015-03-14 02:23:42.428 twitterApp[43065:2231674] [CDVTimer][keyboard] 0.111997ms
+2015-03-14 02:23:42.428 twitterApp[43065:2231674] [CDVTimer][TotalPluginStartup] 0.389993ms
+2015-03-14 02:23:42.539 twitterApp[43065:2231674] Resetting plugins due to page load.
+2015-03-14 02:23:42.767 twitterApp[43065:2231674] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:24:16.707 twitterApp[43065:2231674] Resetting plugins due to page load.
+2015-03-14 02:24:16.781 twitterApp[43065:2231674] Finished load of: http://172.16.254.41:8100/?restart=359194#/name
+2015-03-14 02:24:18.535 twitterApp[43065:2231674] Resetting plugins due to page load.
+2015-03-14 02:24:18.596 twitterApp[43065:2231674] Finished load of: http://172.16.254.41:8100/?restart=767220#/name
+2015-03-14 02:24:38.178 twitterApp[43065:2231674] Resetting plugins due to page load.
+2015-03-14 02:24:38.250 twitterApp[43065:2231674] Finished load of: http://172.16.254.41:8100/?restart=962542#/name
+2015-03-14 02:24:55.776 twitterApp[43228:2233384] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/051E5633-1237-4664-BC58-464918B87E3D/Library/Cookies/Cookies.binarycookies
+2015-03-14 02:24:55.908 twitterApp[43228:2233384] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 02:24:55.909 twitterApp[43228:2233384] Multi-tasking -> Device: YES, App: YES
+2015-03-14 02:24:55.911 twitterApp[43228:2233384] Unlimited access to network resources
+2015-03-14 02:24:56.009 twitterApp[43228:2233384] [CDVTimer][keyboard] 0.065982ms
+2015-03-14 02:24:56.009 twitterApp[43228:2233384] [CDVTimer][TotalPluginStartup] 0.245988ms
+2015-03-14 02:24:56.065 twitterApp[43228:2233384] Resetting plugins due to page load.
+2015-03-14 02:24:56.329 twitterApp[43228:2233384] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:25:11.746 twitterApp[43341:2233850] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/99AFE233-E6EA-4482-BB0D-483C4D64D274/Library/Cookies/Cookies.binarycookies
+2015-03-14 02:25:11.861 twitterApp[43341:2233850] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 02:25:11.861 twitterApp[43341:2233850] Multi-tasking -> Device: YES, App: YES
+2015-03-14 02:25:11.864 twitterApp[43341:2233850] Unlimited access to network resources
+2015-03-14 02:25:11.960 twitterApp[43341:2233850] [CDVTimer][keyboard] 0.068009ms
+2015-03-14 02:25:11.960 twitterApp[43341:2233850] [CDVTimer][TotalPluginStartup] 0.258029ms
+2015-03-14 02:25:12.014 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:25:12.255 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:25:26.349 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:25:26.421 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:25:40.036 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:25:40.154 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:26:13.274 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:26:13.448 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:26:33.420 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:26:33.550 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:26:42.997 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:26:43.169 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:27:17.042 twitterApp[43341:2233850] Resetting plugins due to page load.
+2015-03-14 02:27:17.364 twitterApp[43341:2233850] Finished load of: http://172.16.254.41:8100/#/tab/chats
+2015-03-14 02:27:37.779 twitterApp[43491:2235955] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/87B415B4-09BF-4DA0-8879-998B756B2532/Library/Cookies/Cookies.binarycookies
+2015-03-14 02:27:37.892 twitterApp[43491:2235955] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 02:27:37.893 twitterApp[43491:2235955] Multi-tasking -> Device: YES, App: YES
+2015-03-14 02:27:37.894 twitterApp[43491:2235955] Unlimited access to network resources
+2015-03-14 02:27:37.968 twitterApp[43491:2235955] [CDVTimer][keyboard] 0.061989ms
+2015-03-14 02:27:37.969 twitterApp[43491:2235955] [CDVTimer][TotalPluginStartup] 0.220001ms
+2015-03-14 02:27:38.042 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:27:38.318 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:27:49.024 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:27:49.190 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/chats
+2015-03-14 02:30:24.899 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:30:25.009 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:30:29.508 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:30:29.595 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:30:48.435 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:30:48.524 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:30:49.542 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:30:49.608 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:31:18.881 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:31:19.015 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:31:37.692 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:31:37.819 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:34:10.222 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:34:10.313 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:35:30.595 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:35:30.679 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/tab/dash
+2015-03-14 02:36:09.720 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:36:09.790 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:36:14.070 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:36:14.131 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:37:39.606 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:37:39.678 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:37:55.031 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:37:55.102 twitterApp[43491:2235955] Finished load of: http://172.16.254.41:8100/#/name
+2015-03-14 02:39:57.589 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:39:57.618 twitterApp[43491:2235955] Failed to load webpage with error: Could not connect to the server.
+2015-03-14 02:42:34.169 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:42:34.181 twitterApp[43491:2235955] Failed to load webpage with error: The operation couldn’t be completed. (NSURLErrorDomain error -999.)
+2015-03-14 02:42:34.181 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:42:34.194 twitterApp[43491:2235955] Failed to load webpage with error: Could not connect to the server.
+2015-03-14 02:43:33.148 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:43:33.152 twitterApp[43491:2235955] Failed to load webpage with error: Could not connect to the server.
+2015-03-14 02:45:10.498 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:45:10.503 twitterApp[43491:2235955] Failed to load webpage with error: Could not connect to the server.
+2015-03-14 02:46:24.322 twitterApp[43491:2235955] Resetting plugins due to page load.
+2015-03-14 02:46:24.328 twitterApp[43491:2235955] Failed to load webpage with error: Could not connect to the server.

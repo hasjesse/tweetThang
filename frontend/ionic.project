@@ -1,4 +1,10 @@
 {
   "name": "twitterApp",
-  "app_id": ""
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "https://api.instagram.com/v1"
+    }
+  ]
 }
