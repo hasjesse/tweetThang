@@ -1,0 +1,20 @@
+api:
+  build: rails/.
+  volumes:
+    - .:/data
+  links:
+    - redis
+    - mysql
+  expose:
+    - "3000:3000"
+  command: /bin/bash
+  dns: 8.8.8.8
+redis:
+  image: dockerfile/redis
+node:
+  image: dockerfile/nodejs
+  links:
+    - redis
+  command: /bin/bash
+mysql:
+  image: dockerfile/mysql

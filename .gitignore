@@ -4,6 +4,7 @@
 log
 tmp
 .idea
+*.sublime-workspace
 
 #Frontend
 /frontend/bower_components/
