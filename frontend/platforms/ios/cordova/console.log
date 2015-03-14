@@ -30,3 +30,19 @@
 2015-03-12 18:06:51.928 twitterApp[24918:1093883] [CDVTimer][TotalPluginStartup] 0.416040ms
 2015-03-12 18:06:52.254 twitterApp[24918:1093883] Resetting plugins due to page load.
 2015-03-12 18:06:52.597 twitterApp[24918:1093883] Finished load of: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Bundle/Application/6CD1C0E8-29B6-4746-B463-DE41B82D6BB9/twitterApp.app/www/index.html#/tab/dash
+2015-03-14 01:02:54.286 twitterApp[38882:2175156] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/D30BD930-5797-41F0-8946-65C4C4F7CE4E/Library/Cookies/Cookies.binarycookies
+2015-03-14 01:02:54.615 twitterApp[38882:2175156] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 01:02:54.615 twitterApp[38882:2175156] Multi-tasking -> Device: YES, App: YES
+2015-03-14 01:02:54.629 twitterApp[38882:2175156] Unlimited access to network resources
+2015-03-14 01:02:54.932 twitterApp[38882:2175156] [CDVTimer][keyboard] 0.077009ms
+2015-03-14 01:02:54.932 twitterApp[38882:2175156] [CDVTimer][TotalPluginStartup] 0.254035ms
+2015-03-14 01:02:55.223 twitterApp[38882:2175156] Resetting plugins due to page load.
+2015-03-14 01:02:55.546 twitterApp[38882:2175156] Finished load of: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Bundle/Application/F7926995-2D5C-4C83-BE83-50F873AED9FF/twitterApp.app/www/index.html#/tab/dash
+2015-03-14 01:11:57.488 twitterApp[39192:2181867] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/951E7D66-22A5-4CC2-A4DF-0DCE3AA7295F/Library/Cookies/Cookies.binarycookies
+2015-03-14 01:11:57.762 twitterApp[39192:2181867] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-14 01:11:57.763 twitterApp[39192:2181867] Multi-tasking -> Device: YES, App: YES
+2015-03-14 01:11:57.778 twitterApp[39192:2181867] Unlimited access to network resources
+2015-03-14 01:11:58.064 twitterApp[39192:2181867] [CDVTimer][keyboard] 0.075042ms
+2015-03-14 01:11:58.064 twitterApp[39192:2181867] [CDVTimer][TotalPluginStartup] 0.258029ms
+2015-03-14 01:11:58.310 twitterApp[39192:2181867] Resetting plugins due to page load.
+2015-03-14 01:11:58.725 twitterApp[39192:2181867] Finished load of: http://172.16.254.41:8100/#/tab/dash

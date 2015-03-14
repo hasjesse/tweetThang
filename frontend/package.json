@@ -1,6 +1,9 @@
 {
   "name": "twitterapp",
   "version": "1.0.0",
+  "scripts": {
+    "start" : "ionic emulate ios --livereload --consolelogs"
+  },
   "description": "twitterApp: An Ionic project",
   "dependencies": {
     "gulp": "^3.5.6",
