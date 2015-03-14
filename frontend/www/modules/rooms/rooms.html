@@ -1,7 +1,18 @@
-<ul>
-  <li ng-repeat="room in rooms">
-    <a ng-click="enterRoom()">
-      {{room.name}}
-    </a>
-  </li>
-</ul>
+<ion-content>
+  <md-content layout="column">
+    <md-list>
+      <md-item ng-repeat="room in rooms">
+        <md-button class="md-accent">
+          <md-item-content ng-click="enterRoom()">
+            <div class="md-tile-content">
+              <h3>{{room.name}}</h3>
+              <p>
+                {{room.description}}
+              </p>
+            </div>
+          </md-item-content>
+        </md-button>
+      </md-item>
+    </md-list>
+  </md-content>
+</ion-content>

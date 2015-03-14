@@ -9,10 +9,12 @@ angular.module('starter.roomCtrl', [])
 
     $scope.rooms = [
       {
-        name : 'TUNE Demo Room'
+        name : 'TUNE Demo Room',
+        description : 'The TUNE Hackathon Demo Room'
       },
       {
-        name : 'Fake Room'
+        name : 'Fake Room',
+        description: 'This is a fake room, dont bother joining it'
       }
     ];
   });
