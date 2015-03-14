@@ -1,0 +1,32 @@
+2015-03-12 17:16:51.340 twitterApp[24160:1003724] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/BB5F4F94-2E3C-4D39-9791-19006A71F8A0/Library/Cookies/Cookies.binarycookies
+2015-03-12 17:16:51.695 twitterApp[24160:1003724] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-12 17:16:51.695 twitterApp[24160:1003724] Multi-tasking -> Device: YES, App: YES
+2015-03-12 17:16:51.714 twitterApp[24160:1003724] Unlimited access to network resources
+2015-03-12 17:16:52.023 twitterApp[24160:1003724] [CDVTimer][keyboard] 0.078022ms
+2015-03-12 17:16:52.023 twitterApp[24160:1003724] [CDVTimer][TotalPluginStartup] 0.262022ms
+2015-03-12 17:16:52.663 twitterApp[24160:1003724] Resetting plugins due to page load.
+2015-03-12 17:16:53.057 twitterApp[24160:1003724] Finished load of: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Bundle/Application/9BD6D544-1339-4C00-88FA-67189A84AF7C/twitterApp.app/www/index.html#/tab/dash
+2015-03-12 17:19:10.904 twitterApp[24335:1014320] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/133E5363-6BC9-4DF5-9964-F876A58F3909/Library/Cookies/Cookies.binarycookies
+2015-03-12 17:19:11.414 twitterApp[24335:1014320] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-12 17:19:11.415 twitterApp[24335:1014320] Multi-tasking -> Device: YES, App: YES
+2015-03-12 17:19:11.440 twitterApp[24335:1014320] Unlimited access to network resources
+2015-03-12 17:19:11.742 twitterApp[24335:1014320] [CDVTimer][keyboard] 0.083983ms
+2015-03-12 17:19:11.742 twitterApp[24335:1014320] [CDVTimer][TotalPluginStartup] 0.302017ms
+2015-03-12 17:19:12.068 twitterApp[24335:1014320] Resetting plugins due to page load.
+2015-03-12 17:19:12.423 twitterApp[24335:1014320] Finished load of: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Bundle/Application/DB647074-2113-421B-8E5E-57773CA55EAA/twitterApp.app/www/index.html#/tab/dash
+2015-03-12 17:46:17.485 twitterApp[24648:1047053] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/73F3E382-7AD2-48F0-ADA6-4F66100F97EF/Library/Cookies/Cookies.binarycookies
+2015-03-12 17:46:17.792 twitterApp[24648:1047053] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-12 17:46:17.792 twitterApp[24648:1047053] Multi-tasking -> Device: YES, App: YES
+2015-03-12 17:46:17.809 twitterApp[24648:1047053] Unlimited access to network resources
+2015-03-12 17:46:18.114 twitterApp[24648:1047053] [CDVTimer][keyboard] 0.075042ms
+2015-03-12 17:46:18.114 twitterApp[24648:1047053] [CDVTimer][TotalPluginStartup] 0.243008ms
+2015-03-12 17:46:18.425 twitterApp[24648:1047053] Resetting plugins due to page load.
+2015-03-12 17:46:18.764 twitterApp[24648:1047053] Finished load of: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Bundle/Application/2AC37E37-3E0F-44AC-99D3-35678ECE6941/twitterApp.app/www/index.html#/tab/dash
+2015-03-12 18:06:51.246 twitterApp[24918:1093883] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Data/Application/A94EA6A3-02F2-4C8D-8A39-C7FEFC8EE539/Library/Cookies/Cookies.binarycookies
+2015-03-12 18:06:51.588 twitterApp[24918:1093883] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-12 18:06:51.588 twitterApp[24918:1093883] Multi-tasking -> Device: YES, App: YES
+2015-03-12 18:06:51.603 twitterApp[24918:1093883] Unlimited access to network resources
+2015-03-12 18:06:51.928 twitterApp[24918:1093883] [CDVTimer][keyboard] 0.108004ms
+2015-03-12 18:06:51.928 twitterApp[24918:1093883] [CDVTimer][TotalPluginStartup] 0.416040ms
+2015-03-12 18:06:52.254 twitterApp[24918:1093883] Resetting plugins due to page load.
+2015-03-12 18:06:52.597 twitterApp[24918:1093883] Finished load of: file:///Users/patrickc/Library/Developer/CoreSimulator/Devices/8DAFC751-DDB4-4FC2-8623-AF621E0BC36F/data/Containers/Bundle/Application/6CD1C0E8-29B6-4746-B463-DE41B82D6BB9/twitterApp.app/www/index.html#/tab/dash
