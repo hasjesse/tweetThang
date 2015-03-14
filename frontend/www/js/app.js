@@ -8,6 +8,7 @@
 angular.module('starter', [
   'ionic',
   'restangular',
+  'ngMaterial',
   'starter.controllers',
   'starter.nameCtrl',
   'starter.roomCtrl',
@@ -32,7 +33,14 @@ angular.module('starter', [
 .config(function(
     $stateProvider,
     $urlRouterProvider,
-    RestangularProvider) {
+    RestangularProvider,
+    $mdThemingProvider) {
+
+  $mdThemingProvider.theme('default')
+    .primaryPalette('light-blue')
+    .accentPalette('teal')
+    .warnPalette('red')
+    .backgroundPalette('grey');
 
   RestangularProvider.setBaseUrl('https://tweets-api.herokuapp.com/');
 
