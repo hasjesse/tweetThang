@@ -4,7 +4,11 @@
 log
 tmp
 .idea
+
+#Frontend
 /frontend/bower_components/
 /frontend/node_modules/
 /frontend/www/css/ionic.app.css
 /frontend/www/css/ionic.app.min.css
+
+#Backend
