@@ -1,13 +1,13 @@
 api:
   build: rails/.
   volumes:
-    - .:/data
+    - ./rails:/src
   links:
     - redis
     - mysql
-  expose:
+  ports:
     - "3000:3000"
-  command: /bin/bash
+  command: ./start.sh
   dns: 8.8.8.8
 redis:
   image: dockerfile/redis

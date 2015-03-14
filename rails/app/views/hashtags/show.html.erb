@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @hashtag.round_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @hashtag.user_id %>
+</p>
+
+<p>
+  <strong>Tweet:</strong>
+  <%= @hashtag.tweet_id %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @hashtag.tag %>
+</p>
+
+<%= link_to 'Edit', edit_hashtag_path(@hashtag) %> |
+<%= link_to 'Back', hashtags_path %>

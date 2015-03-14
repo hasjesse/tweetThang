@@ -1,0 +1,33 @@
+<%= form_for(@hashtag) do |f| %>
+  <% if @hashtag.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hashtag.errors.count, "error") %> prohibited this hashtag from being saved:</h2>
+
+      <ul>
+      <% @hashtag.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :round_id %><br>
+    <%= f.number_field :round_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tweet_id %><br>
+    <%= f.number_field :tweet_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tag %><br>
+    <%= f.text_field :tag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

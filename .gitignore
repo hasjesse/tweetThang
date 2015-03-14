@@ -13,3 +13,4 @@ tmp
 /frontend/npm-debug.log
 
 #Backend
+.bundle
