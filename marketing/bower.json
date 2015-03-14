@@ -1,0 +1,18 @@
+{
+  "name": "ReHash_Marketing_Website",
+  "version": "1.0.0",
+  "homepage": "https://github.com/hasjesse/CerseisBanana",
+  "authors": [
+    "CerseisBanana"
+  ],
+  "description": "ReHash makreting website",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
