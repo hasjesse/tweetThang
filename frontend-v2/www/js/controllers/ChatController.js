@@ -4,6 +4,8 @@ var chat = app.controller('ChatController',function($stateParams,socket,$sanitiz
     self.messages=[];
     self.hasntVoted = true;
     self.hashTags = [];
+    self.gameNotStarted = true
+    self.users = []
     self.score = 0;
 
     socket.on('connect',function(){
@@ -15,6 +17,12 @@ var chat = app.controller('ChatController',function($stateParams,socket,$sanitiz
         self.connected = true;
         self.number_message= message_string(data.numUsers);
       });
+    });
+
+    socket.on('user list', function (data) {
+      //Set the value of connected flag
+      console.log("users online:", data)
+      self.users = data.users
     });
 
 	  // Whenever the server emits 'new message', update the chat body
@@ -51,7 +59,7 @@ var chat = app.controller('ChatController',function($stateParams,socket,$sanitiz
   		console.log('start game');
 
       socket.emit('new round', function (data) {
-    		$stateParams.gameNotStarted = false;
+    		self.gameNotStarted = false;
   		});
   	}
 
