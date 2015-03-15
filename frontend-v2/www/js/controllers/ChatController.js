@@ -1,4 +1,5 @@
 var chat = app.controller('ChatController',function(
+  $scope,
   $stateParams,
   socket,
   $sanitize,
@@ -16,6 +17,7 @@ var chat = app.controller('ChatController',function(
     socket.on('connect',function(){
       //Add user
       socket.emit('add user', $stateParams.nickname);
+      $scope.nickname = $stateParams.nickname;
       // On login display welcome message
       socket.on('login', function (data) {
         //Set the value of connected flag

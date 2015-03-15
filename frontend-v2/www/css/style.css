@@ -41,7 +41,9 @@
 //  align-self:
 }
 
-.view-container {
-  top: 55px;
+.heading-right {
+  right: 5px;
+  position: absolute;
+  top: 11px;
 }
 

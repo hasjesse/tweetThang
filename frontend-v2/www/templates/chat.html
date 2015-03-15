@@ -1,8 +1,9 @@
 <ion-view view-title="Socket.IO Chat Demo" ng-controller="ChatController as chatCtrl" class="light-grey">
+	<ion-header-bar>
+		<img class="heading_logo" src="img/rehash_icon.svg" > <span class="heading-right">{{nickname}}'s Score: {{chatCtrl.score}}</span>
+	</ion-header-bar>
+
 	<ion-content>
-		<div class="score_counter_container">
-			<h2 class="score">This is your current score: {{chatCtrl.score}}</h2>
-		</div>
 		<md-content layout="column"
 		          layout-align="center center" ng-if="chatCtrl.tweet">
 		<div class="tweet"
