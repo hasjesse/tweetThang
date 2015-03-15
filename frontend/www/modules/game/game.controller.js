@@ -16,7 +16,7 @@ angular.module('starter.gameCtrl', [])
     var hashtagModel = Restangular.all('tags?limit=5&random=1');
 
     $scope.roundTweet = $state.roundTweet;
-    $scope.player = 'Bob';
+    $scope.player = $state.myName;
 
     hashtagModel.getList().then(function(hashtags) {
       var tags = [];
@@ -85,5 +85,10 @@ angular.module('starter.gameCtrl', [])
 
       return array;
     }
+
+  })
+  .controller('ScoreCtrl', function($scope, $timeout, $state, Restangular) {
+
+    console.log('score ctrl baby!');
 
   });

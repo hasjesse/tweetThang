@@ -43,7 +43,7 @@ angular.module('starter', [
     .warnPalette('red')
     .backgroundPalette('grey');
 
-  RestangularProvider.setBaseUrl('http://24b04e2.ngrok.com/api/v1/');
+  RestangularProvider.setBaseUrl('http://198.199.111.110:3000/api/v1/');
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -85,6 +85,12 @@ angular.module('starter', [
       url: "/vote",
       templateUrl: "modules/game/vote/vote.html",
       controller: "VoteCtrl"
+    })
+
+    .state('score', {
+      url: "/score",
+      templateUrl: "modules/game/score/score.html",
+      controller: "ScoreCtrl"
     });
 
   // if none of the above states are matched, use this as the fallback
