@@ -13,19 +13,6 @@
 		  <div>@{{chatCtrl.tweet.screen_name}} <br> {{chatCtrl.tweet.content}}</div>
 		</div>
 
-		<md-list ng-if="!chatCtrl.gameStarted">
-		  <h3>Users in Lobby</h3>
-		  <md-item ng-repeat="user in chatCtrl.users" layout="column">
-		    <md-button class="md-accent" data="{{user}}">
-		      <md-item-content>
-		        <div class="md-tile-content">
-		          <h3 class="user">{{user}}</h3>
-		        </div>
-		      </md-item-content>
-		    </md-button>
-		  </md-item>
-		</md-list>
-
 		<!-- Is this person a judge? -->
 		<md-list ng-if="chatCtrl.isJudge">
 			<h3 class="voting-status-thing">You Are Judging:</h3>
@@ -55,10 +42,23 @@
 		</md-list>
 
 		</md-content>
+
 		<div class="list light-grey bottommsg" ng-if="!chatCtrl.gameStarted">
+			<md-list ng-if="!chatCtrl.gameStarted">
+				<!--<md-list ng-if="chatCtrl.test">-->
+				<h3 class="voting-status-thing">Users in Lobby</h3>
+				<md-item ng-repeat="user in chatCtrl.users" layout="column">
+						<md-item-content>
+							<div class="md-tile-content user-list-name">
+								<h3 class="user">{{user}}</h3>
+							</div>
+						</md-item-content>
+				</md-item>
+			</md-list>
+
 			<div layout="column"
 					 layout-align="center center"
-					 class="item item-input-inset light-grey">
+					 class="item item-input-inset light-grey start-game-thingy">
 				<md-button ng-click="chatCtrl.startGame()"
 									 class="md-raised md-accent"
 									 type="submit">Start Game</md-button>
