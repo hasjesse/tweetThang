@@ -37,5 +37,11 @@
             "type": "registry",
             "id": "org.apache.cordova.device"
         }
+    },
+    "com.ionic.keyboard": {
+        "source": {
+            "type": "registry",
+            "id": "com.ionic.keyboard"
+        }
     }
 }

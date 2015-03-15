@@ -1,6 +1,9 @@
 {
   "name": "ionic-socketio-chat-client",
   "version": "1.0.0",
+  "scripts": {
+    "start" : "ionic emulate ios --livereload --consolelogs"
+  },
   "description": "ionic-socketio-chat-client: An Ionic project",
   "dependencies": {
     "cordova": "^4.3.0",
