@@ -6,15 +6,16 @@ var chat=app.controller('ChatController',function($stateParams,socket,$sanitize,
     self.hashTags = [];
     self.score = 0;
 
-  	socket.on('connect',function(){
+    socket.on('connect',function(){
       //Add user
       socket.emit('add user', $stateParams.nickname);
       // On login display welcome message
       socket.on('login', function (data) {
-      //Set the value of connected flag
-      self.connected = true;
-      self.number_message= message_string(data.numUsers);
-	  });
+        //Set the value of connected flag
+        self.connected = true;
+        self.number_message= message_string(data.numUsers);
+      });
+    });
 
 	  // Whenever the server emits 'new message', update the chat body
 	  socket.on('new message', function (data) {
