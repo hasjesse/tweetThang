@@ -12,18 +12,18 @@ angular.module('starter.gameCtrl', [])
     tweetsModel.getList().then(function(tweets) {
 
       $scope.tweets = tweets;
-      console.log('tweets', $scope.tweets);
+      console.log('tweets gamectrl', $scope.tweets);
     });
 
     hashtagModel.getList().then(function(hashtags) {
       $scope.hashtags = hashtags;
-      console.log('hashtags', $scope.hashtags);
+      console.log('hashtags gamectrl', $scope.hashtags);
     });
 
     $scope.user = {};
 
     $scope.submitName = function() {
-      console.log($scope.user);
+      console.log('user',$scope.user);
 
       $timeout(function() {
         $state.go('rooms');
@@ -40,7 +40,7 @@ angular.module('starter.gameCtrl', [])
 
     hashtagModel.getList().then(function(hashtags) {
       $scope.hashtags = hashtags.slice(0, 5);
-      console.log('hashtags', $scope.hashtags);
+      console.log('hashtags game controller judge', $scope.hashtags);
     });
 
     var tweetsModel = Restangular.all('tweets');

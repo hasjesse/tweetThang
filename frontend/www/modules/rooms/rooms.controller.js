@@ -6,7 +6,14 @@ angular.module('starter.roomCtrl', [])
     $scope.enterRoom = function() {
       // get round information and determine
       // if user is judge or vote
-      $state.go('judge');
+      // dont need the && != undefined it is just for when the app is refreshing
+      // it causes the uuids to not be set anymore.
+      if ($state.judgeUuid === $state.myUuid && $state.myUuid != undefined) {
+        $state.go('judge');
+      } else{
+        console.log('you are not the judge');
+      };
+
     };
 
     $scope.rooms = [

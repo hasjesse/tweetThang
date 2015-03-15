@@ -6,7 +6,6 @@
     <title></title>
 
     <!--<link href="lib/ionic/css/ionic.css" rel="stylesheet">-->
-    <!--<link href="css/style.css" rel="stylesheet">-->
 
     <link href="vendor/angular-material.min.css" rel="stylesheet">
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -30,11 +29,15 @@
     <script src="vendor/socket.min.js"></script>
     <script src="vendor/angular-material.min.js"></script>
     <script src="vendor/angular-aria.min.js"></script>
+    <script src="vendor/angular-resource.min.js"></script>
 
   </head>
   <body ng-app="starter" class="platform-ios platform-cordova platform-webview">
-    <ion-nav-view>
-      <ion-view view-title="ReHash"></ion-view>
-    </ion-nav-view>
+    <ion-header-bar class="bar-dark">
+        <img class="heading_logo" src="img/rehash_icon.svg" >
+    </ion-header-bar>
+    <ion-content>
+        <ion-view view-title="ReHash"></ion-view>
+    </ion-content>
   </body>
 </html>
