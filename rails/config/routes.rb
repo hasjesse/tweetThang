@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: [:index, :show, :create]
       resources :tweets, only: [:index, :show]
-      resources :rounds, only: [:index, :show, :create]
+      resources :rounds, only: [:index, :show, :create, :update]
       resources :hashtags, only: [:index, :create, :update]
       resources :tags, only: [:index]
     end
