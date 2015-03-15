@@ -1,6 +1,6 @@
 <ion-view view-title="Socket.IO Chat Demo" ng-controller="ChatController as chatCtrl" class="light-grey">
 	<ion-header-bar>
-		<img class="heading_logo" src="img/rehash_icon.svg" > <span class="heading-right">{{nickname}}'s Score: {{chatCtrl.score}}</span>
+		<img class="heading_logo" src="img/rehash_icon.svg" > <span class="heading-right">{{nickname}}'s Score: <span class="hash">{{chatCtrl.score}}</span></span>
 	</ion-header-bar>
 
 	<ion-content>
@@ -13,8 +13,8 @@
 		  <div>@{{chatCtrl.tweet.screen_name}} <br> {{chatCtrl.tweet.content}}</div>
 		</div>
 
-		<md-list ng-if="chatCtrl.gameNotStarted">
-		  <h2>Users Waiting For Game</h2>
+		<md-list ng-if="!chatCtrl.gameStarted">
+		  <h3>Users in Lobby</h3>
 		  <md-item ng-repeat="user in chatCtrl.users" layout="column">
 		    <md-button class="md-accent" data="{{user}}">
 		      <md-item-content>
@@ -28,6 +28,7 @@
 
 		<!-- Is this person a judge? -->
 		<md-list ng-if="chatCtrl.isJudge">
+			<h3 class="voting-status-thing">You Are Judging:</h3>
 		  <md-item ng-repeat="hashtag in chatCtrl.hashTags" layout="column">
 		    <md-button class="md-accent" data="{{chatCtrl.hashtag}}" ng-click="chatCtrl.voteForHashtag(hashtag)" disabled="{{chatCtrl.hashtag.disabled}}">
 		      <md-item-content>
@@ -41,6 +42,7 @@
 
 		<!-- is this person a player? -->
 		<md-list ng-if="chatCtrl.hasntVoted && !chatCtrl.isJudge">
+			<h3 class="voting-status-thing">You Are Voting:</h3>
 		  <md-item ng-repeat="hashtag in chatCtrl.hashTags" layout="column">
 		    <md-button class="md-accent" data="{{chatCtrl.hashtag}}" ng-click="chatCtrl.submitHashtag(hashtag)">
 		      <md-item-content>
@@ -53,9 +55,13 @@
 		</md-list>
 
 		</md-content>
-		<div class="list light-grey bottommsg" ng-if="chatCtrl.gameNotStarted">
-			<div class="item item-input-inset light-grey">
-			  <button class="button button-block button-grey" ng-click="chatCtrl.startGame()">Start Game</button>
+		<div class="list light-grey bottommsg" ng-if="!chatCtrl.gameStarted">
+			<div layout="column"
+					 layout-align="center center"
+					 class="item item-input-inset light-grey">
+				<md-button ng-click="chatCtrl.startGame()"
+									 class="md-raised md-accent"
+									 type="submit">Start Game</md-button>
 			</div>
 		</div>
 		</ion-content>
