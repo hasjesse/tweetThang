@@ -12,5 +12,10 @@ tmp
 /frontend/platforms/
 /frontend/npm-debug.log
 
+/frontend-v2/bower_components/
+/frontend-v2/node_modules/
+/frontend-v2/platforms/
+/frontend-v2/npm-debug.log
+
 #Backend
 .bundle
