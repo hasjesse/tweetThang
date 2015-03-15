@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get '/reset', to: 'application#reset'
   match '*path', :to => 'application#handle_options_request', via: [ :options ]
 
   namespace :api, defaults: { format: 'json' } do
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'api/v1/rounds#index'
+  root 'api/v1/rounds#index', defaults: { format: 'json' }
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

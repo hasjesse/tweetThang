@@ -4,17 +4,27 @@
 	</ion-header-bar>
 
 	<ion-content>
-		<!--<div class="score_counter_container">-->
-			<!--<h2 class="score">This is your current score: {{chatCtrl.score}}</h2>-->
-		<!--</div>-->
 		<md-content layout="column"
-		            layout-align="center center">
+		          layout-align="center center" ng-if="chatCtrl.tweet">
 		<div class="tweet"
 		     layout="column"
 		     layout-align="center center">
-		  <img ng-show="chatCtrl.tweet.image" class="tweet-img" ng-src="{{chatCtrl.tweet.image}}"/>
+		  <img class="tweet-img" ng-src="{{chatCtrl.tweet.image}}"/>
 		  <div>@{{chatCtrl.tweet.screen_name}} <br> {{chatCtrl.tweet.content}}</div>
 		</div>
+
+		<md-list ng-if="chatCtrl.gameNotStarted">
+		  <h2>Users Waiting For Game</h2>
+		  <md-item ng-repeat="user in chatCtrl.users" layout="column">
+		    <md-button class="md-accent" data="{{user}}">
+		      <md-item-content>
+		        <div class="md-tile-content">
+		          <h3 class="user">{{user}}</h3>
+		        </div>
+		      </md-item-content>
+		    </md-button>
+		  </md-item>
+		</md-list>
 
 		<!-- Is this person a judge? -->
 		<md-list ng-if="chatCtrl.isJudge">
@@ -22,7 +32,7 @@
 		    <md-button class="md-accent" data="{{chatCtrl.hashtag}}" ng-click="chatCtrl.voteForHashtag(hashtag)" disabled="{{chatCtrl.hashtag.disabled}}">
 		      <md-item-content>
 		        <div class="md-tile-content">
-		          <h3 class="hashtag">judge <span class="hash">#</span>{{hashtag.content}}</h3>
+		          <h3 class="hashtag"><span class="hash">#</span>{{hashtag.content}}</h3>
 		        </div>
 		      </md-item-content>
 		    </md-button>
@@ -35,7 +45,7 @@
 		    <md-button class="md-accent" data="{{chatCtrl.hashtag}}" ng-click="chatCtrl.submitHashtag(hashtag)">
 		      <md-item-content>
 		        <div class="md-tile-content">
-		          <h3 class="hashtag">player <span class="hash">#</span>{{hashtag.content}}</h3>
+		          <h3 class="hashtag"><span class="hash">#</span>{{hashtag.content}}</h3>
 		        </div>
 		      </md-item-content>
 		    </md-button>
@@ -43,7 +53,7 @@
 		</md-list>
 
 		</md-content>
-		<div class="list light-grey bottommsg">
+		<div class="list light-grey bottommsg" ng-if="chatCtrl.gameNotStarted">
 			<div class="item item-input-inset light-grey">
 			  <button class="button button-block button-grey" ng-click="chatCtrl.startGame()">Start Game</button>
 			</div>

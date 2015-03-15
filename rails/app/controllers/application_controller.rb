@@ -6,4 +6,23 @@ class ApplicationController < ActionController::Base
   def handle_options_request
     head(:ok) if request.request_method == "OPTIONS"
   end
+
+  def reset
+    [
+      Hashtag,
+      Round,
+      User,
+    ].each do |klass|
+      klass.destroy_all
+    end
+
+    Tweet.reset!
+    Tag.reset
+
+    render json: {
+      tweets: Tweet.count,
+      tags: Tag.count,
+      users: User.count,
+    }
+  end
 end

@@ -9,6 +9,11 @@ api:
     - "3000:3000"
   command: ./start.sh
   dns: 8.8.8.8
+  environment:
+    - TWITTER_CONSUMER_KEY=qH2NWaNhv72vewBvZwMsMdCxH
+    - TWITTER_CONSUMER_SECRET=RnBunhLNx0wKTHbwU6JbgB6DbcbxA5o9ZIEDpxNGzoWjKDIdQq
+    - TWITTER_OAUTH_TOKEN=3080201089-fhU9CBURlQhuWxLoqSQQe720dng5Yq0l3942CmX
+    - TWITTER_OAUTH_TOKEN_SECRET=TzGCQrbIP9zgl3JGkcsoRPyfKmmyuwHGVLz4tH3AY4ydP
 redis:
   image: dockerfile/redis
 node:

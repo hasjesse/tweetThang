@@ -6,9 +6,12 @@ var chat = app.controller('ChatController',function(
   $ionicScrollDelegate) {
 
     var self = this;
+    self.autofocus=true
     self.messages=[];
     self.hasntVoted = true;
     self.hashTags = [];
+    self.gameNotStarted = true
+    self.users = []
     self.score = 0;
 
     socket.on('connect',function(){
@@ -19,8 +22,13 @@ var chat = app.controller('ChatController',function(
       socket.on('login', function (data) {
         //Set the value of connected flag
         self.connected = true;
-        self.number_message= message_string(data.numUsers);
       });
+    });
+
+    socket.on('user list', function (data) {
+      //Set the value of connected flag
+      console.log("users online:", data)
+      self.users = data.users
     });
 
 	  // Whenever the server emits 'new message', update the chat body
@@ -57,7 +65,7 @@ var chat = app.controller('ChatController',function(
   		console.log('start game');
 
       socket.emit('new round', function (data) {
-    		$stateParams.gameNotStarted = false;
+    		self.gameNotStarted = false;
   		});
   	}
 
@@ -65,6 +73,7 @@ var chat = app.controller('ChatController',function(
   	socket.on('start round', function (data) {
       self.judge = data.judge;
       self.hasntVoted = true;
+      self.gameNotStarted = false;
 
       if ($stateParams.nickname === self.judge) {
         self.hashTags = [];

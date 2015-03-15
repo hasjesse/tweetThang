@@ -1,5 +1,5 @@
 json.array!(@tweets) do |tweet|
-  json.extract! tweet, :id, :content, :screen_name, :name
+  json.extract! tweet, :id, :content, :screen_name, :name, :image
   json.rounds tweet.rounds do |round|
     json.extract! round, :id
 
