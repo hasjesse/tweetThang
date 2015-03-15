@@ -1,11 +1,29 @@
-<ion-view ng-controller="LoginController as logcntrl" class="light">
+<ion-view ng-controller="LoginController as logcntrl">
   <ion-content>
-	  <div class="list list-inset light top180">
-	  	<label class="item item-input linegrey" >
-	    	<input type="text" class="linegrey white" placeholder="What is your nickname?" ng-model="logcntrl.nickname">
-	  	</label>
-	  	<button class="button button-block button-grey" ng-click="logcntrl.join()">Join</button>
-	  </div>
+		<div layout="column"
+				 layout-align="center center">
+
+			<img class="login-logo" src="../img/rehash_icon.svg" alt=""/>
+
+			<form name="nameForm"
+						novalidate
+						ng-submit="submitName()">
+
+				<md-input-container flex>
+					<label>Name</label>
+					<input id="first_name"
+								 type="text"
+								 placeholder="Name"
+								 ng-model="logcntrl.nickname">
+				</md-input-container>
+
+				<div layout="column">
+					<md-button ng-click="logcntrl.join()"
+							       class="md-raised md-accent"
+										 type="submit">Play</md-button>
+				</div>
+			</form>
+		</div>
   </ion-content>
 </ion-view>
 

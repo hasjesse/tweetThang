@@ -1,0 +1,88 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"MATPlugin\"><param name=\"android-package\" value=\"com.mobileapptracking.MATPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"GAIDWrapperPlugin\"><param name=\"android-package\" value=\"com.mobileapptracking.gaidwrapper.GAIDWrapperPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<receiver android:exported=\"true\" android:name=\"com.mobileapptracker.Tracker\"><intent-filter><action android:name=\"com.android.vending.INSTALL_REFERRER\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />",
+                            "count": 2
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"LocalyticsPlugin\"><param name=\"android-package\" value=\"com.localytics.phonegap.LocalyticsPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.mobileapptracking.matplugin": {
+            "PACKAGE_NAME": "com.ionicframework.ionicsocketiochatclient413776"
+        },
+        "com.mobileapptracking.gaidwrapper": {
+            "PACKAGE_NAME": "com.tune.rehash"
+        },
+        "com.mobileapptracking.ifawrapper": {
+            "PACKAGE_NAME": "com.tune.rehash"
+        },
+        "com.localytics.phonegap.LocalyticsPlugin": {
+            "PACKAGE_NAME": "com.tune.rehash"
+        }
+    },
+    "dependent_plugins": {
+        "com.google.playservices": {
+            "PACKAGE_NAME": "com.tune.rehash"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.tune.rehash"
+        }
+    }
+}

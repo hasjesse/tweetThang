@@ -1,4 +1,8 @@
-var chat = app.controller('ChatController',function($stateParams,socket,$sanitize,$ionicScrollDelegate) {
+var chat = app.controller('ChatController',function(
+  $stateParams,
+  socket,
+  $sanitize,
+  $ionicScrollDelegate) {
 
     var self = this;
     self.messages=[];
@@ -76,15 +80,15 @@ var chat = app.controller('ChatController',function($stateParams,socket,$sanitiz
     self.submitHashtag = function (hashtag) {
       console.log('$stateParams.nickname', $stateParams.nickname)
       // Makes judge not able to vote yet
-      self.voteEnabled = false
-      hashtag.username = $stateParams.nickname
+      self.voteEnabled = false;
+      hashtag.username = $stateParams.nickname;
 
       socket.emit('send hashtag', hashtag);
 
-      self.hasntVoted = false
+      self.hasntVoted = false;
 
       console.log('voted hashtag' + hashtag)
-    }
+    };
 
     self.voteForHashtag = function (hashtag) {
       // Can the the judge vote?
@@ -94,7 +98,7 @@ var chat = app.controller('ChatController',function($stateParams,socket,$sanitiz
         });
     	} else {
     		console.log('not all votes are in');
-    	};
+    	}
 
     }
 });

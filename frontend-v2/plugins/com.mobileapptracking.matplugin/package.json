@@ -1,0 +1,25 @@
+{
+    "version": "3.7.0",
+    "name": "com.mobileapptracking.matplugin",
+    "cordova_name": "MATPlugin",
+    "description": "This plugin allows you to track installs and events using MobileAppTracking.",
+    "license": "Apache 2.0",
+    "repo": "https://github.com/MobileAppTracking/phonegap-plugin.git",
+    "keywords": [
+        "cordova",
+        "mat",
+        "mobileapptracking",
+        "tracking"
+    ],
+    "platforms": [
+        "android",
+        "ios",
+        "wp8"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}
