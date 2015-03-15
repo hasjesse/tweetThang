@@ -1,6 +1,6 @@
 app.factory('socket',function(socketFactory){
 	//Create socket and connect to http://chat.socket.io
- 	var myIoSocket = io.connect('http://5b385c31.ngrok.com');
+ 	var myIoSocket = io.connect('https://rehash-socket.herokuapp.com');
 
   	mySocket = socketFactory({
     	ioSocket: myIoSocket
