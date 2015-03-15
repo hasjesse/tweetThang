@@ -1,0 +1,25 @@
+{
+    "version": "1.0.0",
+    "name": "com.mobileapptracking.gaidwrapper",
+    "cordova_name": "GAIDWrapperPlugin",
+    "description": "This plugin allows you to access the Google Advertising ID from Google Play Services",
+    "license": "Apache 2.0",
+    "repo": "https://github.com/MobileAppTracking/phonegap-plugin.git",
+    "keywords": [
+        "cordova",
+        "mat",
+        "mobileapptracking",
+        "tracking",
+        "gaid"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

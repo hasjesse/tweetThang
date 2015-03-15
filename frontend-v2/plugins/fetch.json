@@ -1,0 +1,41 @@
+{
+    "com.mobileapptracking.matplugin": {
+        "source": {
+            "type": "registry",
+            "id": "com.mobileapptracking.matplugin"
+        }
+    },
+    "com.mobileapptracking.gaidwrapper": {
+        "source": {
+            "type": "registry",
+            "id": "com.mobileapptracking.gaidwrapper"
+        }
+    },
+    "com.google.playservices": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MobileChromeApps/google-play-services",
+            "subdir": ".",
+            "ref": "master"
+        }
+    },
+    "com.mobileapptracking.ifawrapper": {
+        "source": {
+            "type": "registry",
+            "id": "com.mobileapptracking.ifawrapper"
+        }
+    },
+    "com.localytics.phonegap.LocalyticsPlugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/localytics/phonegap.git",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.device": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.device"
+        }
+    }
+}
