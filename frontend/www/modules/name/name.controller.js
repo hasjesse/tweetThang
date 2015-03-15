@@ -14,7 +14,7 @@ angular.module('starter.nameCtrl', [])
       usersModel.post($scope.user).then(function(user) {
         console.log('wat', user.uuid);
 
-        roundsModel.post(user.uuid).then(function(round) {
+        roundsModel.post(user).then(function(round) {
           console.log('hello', round);
         });
 
