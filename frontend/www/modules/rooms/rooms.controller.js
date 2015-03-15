@@ -2,6 +2,7 @@ angular.module('starter.roomCtrl', [])
 
   .controller('RoomCtrl', function($scope, $state) {
     console.log('roomCtrl working');
+    console.log('room ctrl tweet',$state.testTweet);
 
     $scope.enterRoom = function() {
       // get round information and determine
@@ -10,10 +11,9 @@ angular.module('starter.roomCtrl', [])
       // it causes the uuids to not be set anymore.
       if ($state.judgeUuid === $state.myUuid && $state.myUuid != undefined) {
         $state.go('judge');
-      } else{
-        console.log('you are not the judge');
+      } else {
+        $state.go('player');
       };
-
     };
 
     $scope.rooms = [

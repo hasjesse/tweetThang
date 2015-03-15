@@ -1,52 +1,45 @@
 angular.module('starter.gameCtrl', [])
 
   .controller('GameCtrl', function($scope, $timeout, $state, Restangular) {
-    console.log('gameCtrl working');
-
-    var tweetsModel = Restangular.all('tweets');
-    var hashtagModel = Restangular.all('hashtags');
-
-    $scope.tweets = [];
-    $scope.hashtags = [];
-
-    tweetsModel.getList().then(function(tweets) {
-
-      $scope.tweets = tweets;
-      console.log('tweets gamectrl', $scope.tweets);
-    });
-
-    hashtagModel.getList().then(function(hashtags) {
-      $scope.hashtags = hashtags;
-      console.log('hashtags gamectrl', $scope.hashtags);
-    });
 
     $scope.user = {};
 
     $scope.submitName = function() {
-      console.log('user',$scope.user);
-
       $timeout(function() {
         $state.go('rooms');
       }, 1000);
     };
   })
 
-  .controller('JudgeCtrl', function($scope, $timeout, $state, Restangular) {
-    console.log('judgeCtrl working');
+  .controller('PlayerCtrl', function($scope, $timeout, $state, Restangular) {
 
-    var hashtagModel = Restangular.all('hashtags');
+    var hashtagModel = Restangular.all('tags?limit=5&random=1');
 
-    $scope.hashtags = [];
+    $scope.roundTweet = $state.roundTweet;
+    $scope.player = 'Bob';
 
     hashtagModel.getList().then(function(hashtags) {
-      $scope.hashtags = hashtags.slice(0, 5);
-      console.log('hashtags game controller judge', $scope.hashtags);
+      var tags = [];
+      for (var i = 0; i < 5; i++) {
+        tags.push(hashtags[i].content)
+      };
+      $scope.hashtags = tags;
     });
 
-    var tweetsModel = Restangular.all('tweets');
-    tweetsModel.getList().then(function(tweets) {
-      $scope.tweet = tweets[54];
-      console.log($scope.tweet);
+  })
+
+  .controller('JudgeCtrl', function($scope, $timeout, $state, Restangular) {
+
+    var hashtagModel = Restangular.all('tags?limit=5&random=1');
+
+    $scope.roundTweet = $state.roundTweet;
+
+    hashtagModel.getList().then(function(hashtags) {
+      var tags = [];
+      for (var i = 0; i < 5; i++) {
+        tags.push(hashtags[i].content)
+      };
+      $scope.hashtags = tags;
     });
 
   })

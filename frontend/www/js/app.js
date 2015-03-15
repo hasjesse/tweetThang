@@ -69,6 +69,12 @@ angular.module('starter', [
       controller: "GameCtrl"
     })
 
+    .state('player', {
+      url: "/player",
+      templateUrl: "modules/game/player/player.html",
+      controller: "PlayerCtrl"
+    })
+
     .state('judge', {
       url: "/judge",
       templateUrl: "modules/game/judge/judge.html",

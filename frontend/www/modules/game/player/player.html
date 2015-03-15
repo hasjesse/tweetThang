@@ -7,7 +7,7 @@
       <img class="tweet-img" ng-src="{{roundTweet.image}}"/>
       <div>@{{roundTweet.screen_name}}: {{roundTweet.tweet}}</div>
     </div>
-    <h2>Judge</h2>
+    <h2>{{player}}</h2>
     <md-list>
       <md-item ng-repeat="hashtag in hashtags" layout="column">
         <md-button class="md-accent" ng-click="voteForHashtag()">

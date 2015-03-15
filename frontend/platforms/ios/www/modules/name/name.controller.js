@@ -12,10 +12,14 @@ angular.module('starter.nameCtrl', [])
       console.log('posting ', $scope.user);
 
       usersModel.post($scope.user).then(function(user) {
-        console.log('wat', user.uuid);
+        // console.log('wat', user.uuid);
+        $state.myUuid = user.uuid;
 
         roundsModel.post(user).then(function(round) {
-          console.log('hello', round);
+          // console.log('hello', round);
+          console.log('tweet', round.tweet);
+          $state.judgeUuid = round.judge.uuid;
+          $state.testTweet = round.tweet;
         });
 
         $timeout(function() {
