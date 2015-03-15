@@ -81,7 +81,7 @@ var chat = app.controller('ChatController',function(
         self.isJudge = true;
         console.log('judge' + self.hashTags);
       } else {
-      	self.hashTags = data.hashtags;
+      	self.hashTags = data.hashtags[$stateParams.nickname];
         self.isJudge = false;
         console.log('judge' + self.hashTags);
       }
