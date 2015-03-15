@@ -21,8 +21,15 @@ var app=angular.module('ionic-socketio-chat-client', ['ionic', 'ngSanitize','btf
 {
 
   $stateProvider
-    .state('chat', {
-      url: "/chat/:nickname",
-      templateUrl: "templates/chat.html"
-    });
+  .state('chat', {
+    url: "/chat/:nickname",
+    templateUrl: "templates/chat.html"
+  })
+  .state('login', {
+    url: "/login",
+    templateUrl: "templates/login.html"
+  });
+
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/login');
 })

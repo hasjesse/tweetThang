@@ -1,4 +1,4 @@
-var chat=app.controller('ChatController',function($stateParams,socket,$sanitize,$ionicScrollDelegate) {
+var chat = app.controller('ChatController',function($stateParams,socket,$sanitize,$ionicScrollDelegate) {
 
     var self = this;
     self.messages=[];
