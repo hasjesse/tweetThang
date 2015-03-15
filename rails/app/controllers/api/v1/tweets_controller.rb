@@ -3,7 +3,7 @@ class Api::V1::TweetsController < Api::V1::BaseController
 
   # GET /api/v1/tweets
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.includes(:rounds).order('rounds.updated_at DESC')
   end
 
   # GET /api/v1/tweets/1

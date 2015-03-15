@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314183209) do
+ActiveRecord::Schema.define(version: 20150314183210) do
 
   create_table "hashtags", force: :cascade do |t|
     t.integer  "round_id",   limit: 4,                   null: false
@@ -33,6 +33,14 @@ ActiveRecord::Schema.define(version: 20150314183209) do
   end
 
   add_index "rounds", ["judge_id", "tweet_id"], name: "index_rounds_on_judge_id_and_tweet_id", unique: true, using: :btree
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "content",    limit: 255, null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "tags", ["content"], name: "index_tags_on_content", unique: true, using: :btree
 
   create_table "tweets", force: :cascade do |t|
     t.string   "content",     limit: 255, null: false

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       resources :tweets, only: [:index, :show]
       resources :rounds, only: [:index, :show, :create]
       resources :hashtags, only: [:index, :create, :update]
+      resources :tags, only: [:index]
     end
   end
 
@@ -15,7 +16,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'rounds#index'
+  root 'api/v1/rounds#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

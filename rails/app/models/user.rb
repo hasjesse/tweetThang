@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
     presence: true,
     length: { maximum: 255 }
 
-  has_many :rounds, foreign_key: :judge_id
-  has_many :hashtags
+  has_many :rounds, foreign_key: :judge_id, dependent: :destroy
+  has_many :hashtags, dependent: :destroy
 
   before_validation :set_uuid
 

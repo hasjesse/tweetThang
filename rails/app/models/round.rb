@@ -11,7 +11,7 @@ class Round < ActiveRecord::Base
   belongs_to :judge, class_name: "User"
   belongs_to :tweet
 
-  has_many :hashtags
+  has_many :hashtags, dependent: :destroy
   has_many :users, through: :hashtags
 
   default_scope -> { order("created_at DESC") }

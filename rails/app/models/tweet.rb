@@ -12,5 +12,5 @@ class Tweet < ActiveRecord::Base
     length: { maximum: 255 },
     presence: true
 
-  has_many :hashtags
+  has_many :rounds, dependent: :destroy
 end
