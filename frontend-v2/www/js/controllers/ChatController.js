@@ -5,6 +5,7 @@ var chat = app.controller('ChatController',function(
   $ionicScrollDelegate) {
 
     var self = this;
+    self.autofocus=true
     self.messages=[];
     self.hasntVoted = true;
     self.hashTags = [];
@@ -19,7 +20,6 @@ var chat = app.controller('ChatController',function(
       socket.on('login', function (data) {
         //Set the value of connected flag
         self.connected = true;
-        self.number_message= message_string(data.numUsers);
       });
     });
 
@@ -28,16 +28,6 @@ var chat = app.controller('ChatController',function(
       console.log("users online:", data)
       self.users = data.users
     });
-
-	  // Whenever the server emits 'new message', update the chat body
-	  socket.on('new message', function (data) {
-	   	addMessageToList(data.username,true,data.message);
-	  });
-
-	  // Whenever the server emits 'user left', log it in the chat body
-	  socket.on('user left', function (data) {
-	    addMessageToList(data.username,false,self.message);
-	  });
 
   	socket.on('send hashtag to subscribers', function (data) {
 		  self.hashTags.push(data);
@@ -71,6 +61,7 @@ var chat = app.controller('ChatController',function(
   	socket.on('start round', function (data) {
       self.judge = data.judge;
       self.hasntVoted = true;
+      self.gameNotStarted = false;
 
       if ($stateParams.nickname === self.judge) {
         self.hashTags = [];
