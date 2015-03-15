@@ -13,6 +13,7 @@ var chat = app.controller('ChatController',function(
     self.gameStarted = false;
     self.users = [];
     self.score = 0;
+    self.test = true;
 
     socket.on('connect',function(){
       //Add user
