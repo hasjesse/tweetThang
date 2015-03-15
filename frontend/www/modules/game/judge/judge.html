@@ -1,0 +1,23 @@
+<ion-content>
+  <md-content layout="column"
+              layout-align="center center">
+    <div class="tweet"
+         layout="column"
+         layout-align="center center">
+      <img class="tweet-img" ng-src="{{tweet.image}}"/>
+      <div>@{{::tweet.name}}: {{::tweet.tweet}}</div>
+    </div>
+    <h2>Judge</h2>
+    <md-list>
+      <md-item ng-repeat="hashtag in hashtags" layout="column">
+        <md-button class="md-accent" ng-click="voteForHashtag()">
+          <md-item-content>
+            <div class="md-tile-content">
+              <h3 class="hashtag"><span class="hash">#</span>{{hashtag.hash_tag}}</h3>
+            </div>
+          </md-item-content>
+        </md-button>
+      </md-item>
+    </md-list>
+  </md-content>
+</ion-content>

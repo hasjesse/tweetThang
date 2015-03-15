@@ -21,3 +21,27 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+// Hashtag
+
+.hashtag {
+  font-size: 20px !important;
+  text-transform: none !important;
+}
+
+.hash {
+  color: teal;
+}
+
+// Tweets
+
+.tweet {
+  text-align: center;
+}
+
+.tweet-img {
+  border-radius: 100%;
+  display: block;
+
+  height: 100px;
+  width: 100px;
+}

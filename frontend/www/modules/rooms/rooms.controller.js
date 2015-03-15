@@ -4,7 +4,9 @@ angular.module('starter.roomCtrl', [])
     console.log('roomCtrl working');
 
     $scope.enterRoom = function() {
-      $state.go('game');
+      // get round information and determine
+      // if user is judge or vote
+      $state.go('judge');
     };
 
     $scope.rooms = [

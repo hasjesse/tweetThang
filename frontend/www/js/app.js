@@ -9,6 +9,7 @@ angular.module('starter', [
   'ionic',
   'restangular',
   'ngMaterial',
+  'ngResource',
   'starter.controllers',
   'starter.nameCtrl',
   'starter.roomCtrl',
@@ -42,7 +43,7 @@ angular.module('starter', [
     .warnPalette('red')
     .backgroundPalette('grey');
 
-  RestangularProvider.setBaseUrl('https://tweets-api.herokuapp.com/');
+  RestangularProvider.setBaseUrl('http://24b04e2.ngrok.com/api/v1/');
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
@@ -66,6 +67,18 @@ angular.module('starter', [
       url: "/game",
       templateUrl: "modules/game/game.html",
       controller: "GameCtrl"
+    })
+
+    .state('judge', {
+      url: "/judge",
+      templateUrl: "modules/game/judge/judge.html",
+      controller: "JudgeCtrl"
+    })
+
+    .state('vote', {
+      url: "/vote",
+      templateUrl: "modules/game/vote/vote.html",
+      controller: "VoteCtrl"
     });
 
   // if none of the above states are matched, use this as the fallback
