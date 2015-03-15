@@ -29,6 +29,16 @@ var chat = app.controller('ChatController',function(
       self.users = data.users
     });
 
+	  // Whenever the server emits 'new message', update the chat body
+	  socket.on('new message', function (data) {
+	   	addMessageToList(data.username,true,data.message);
+	  });
+
+	  // Whenever the server emits 'user left', log it in the chat body
+	  socket.on('user left', function (data) {
+	    addMessageToList(data.username,false,self.message);
+	  });
+
   	socket.on('send hashtag to subscribers', function (data) {
 		  self.hashTags.push(data);
     });
