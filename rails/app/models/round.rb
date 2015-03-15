@@ -8,6 +8,10 @@ class Round < ActiveRecord::Base
       scope: [ :judge_id ],
     }
 
+  validates :status,
+    length: { maximum: 255 },
+    allow_nil: true
+
   belongs_to :judge, class_name: "User"
   belongs_to :tweet
 
@@ -34,13 +38,11 @@ class Round < ActiveRecord::Base
   end
 
   def check_submissions
-    if self.hashtags.incomplete == 0
-      self.update_attributes(status: :submission_complete)
-
-      return true
+    if status == "open" && !self.hashtags.incomplete.any?
+      self.update_attributes(status: "submission_complete")
+    elsif status == "submission_complete" && self.hashtags.winning.any?
+      self.update_attributes(status: "closed")
     end
-
-    false
   end
 
   def close
