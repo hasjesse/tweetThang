@@ -8,6 +8,7 @@ tmp
 #Frontend
 /frontend/bower_components/
 /frontend/node_modules/
+/frontend/platforms/
 /frontend/www/css/ionic.app.css
 /frontend/www/css/ionic.app.min.css
 /frontend/npm-debug.log

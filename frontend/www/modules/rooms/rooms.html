@@ -1,9 +1,10 @@
 <ion-content>
-  <md-content layout="column">
+  <md-content layout="column"
+              layout-align="center center">
     <md-list>
-      <md-item ng-repeat="room in rooms">
-        <md-button class="md-accent">
-          <md-item-content ng-click="enterRoom()">
+      <md-item ng-repeat="room in rooms" layout="column">
+        <md-button class="md-accent" ng-click="enterRoom()">
+          <md-item-content>
             <div class="md-tile-content">
               <h3>{{room.name}}</h3>
               <p>
